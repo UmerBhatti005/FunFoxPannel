@@ -1,0 +1,19 @@
+﻿@model FunFoxTask.Models.IdentityAspNetUser
+
+@{
+    ViewData["Title"] = "EnrolledCourse";
+}
+
+@if (@ViewData["CourseName"] != null)
+{
+    <h1>
+        @Model.FirstName @Model.LastName is Enrolled in @ViewData["CourseName"] Course
+    </h1>
+}
+else
+{
+    <h1>
+        In compliance with institutional policies, the user has been expelled from the course due to non-compliance or violation of academic integrity standards. This action ensures the integrity of the learning environment and adherence to academic standards.
+    </h1>
+}
+
